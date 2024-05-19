@@ -1,17 +1,10 @@
 import React, { useState } from "react";
-import {
-  Navbar,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-} from "@nextui-org/navbar";
+import { Navbar, NavbarContent, NavbarItem } from "@nextui-org/navbar";
 import Link from "next/link";
 
 export default function NavBar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar>
       <NavbarContent className=" sm:flex gap-4 justify-center mr-10">
         <NavbarItem>
           <Link color="foreground" href="/">
