@@ -147,14 +147,15 @@ body {
 
 p {
   font-family: "Brush Script MT", cursive;
-  margin: 40px;
+  margin: 30px;
   color: #333;
 }
 
 .name {
   position: absolute;
+  font-size: small;
   left: 150px;
-  top: 200px;
+  top: 250px;
   color: #333;
 }
 
@@ -169,8 +170,6 @@ p {
 
 .frontImage {
   width: 100%;
-  height: auto;
-  margin-top: 20px;
 }
 
 .insideImage {
@@ -183,4 +182,54 @@ p {
   width: 100%;
   height: auto;
   margin-top: 20px;
+}
+
+.link {
+  position: relative;
+  color: #3498db;
+  font-size: larger;
+  text-decoration: none;
+  padding-bottom: 2px;
+  transition: color 0.3s, border-bottom 0.3s;
+  @apply font-extrabold;
+}
+
+.link:hover {
+  color: #2ecc71;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2ecc71;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.link-shadow {
+  display: inline-block;
+  color: #fff;
+  background-color: #3498db;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.link-shadow:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.link-shadow:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }

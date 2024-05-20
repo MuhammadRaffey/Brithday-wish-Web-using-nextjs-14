@@ -6,8 +6,8 @@ export default function ImageCard() {
   return (
     <Card className="mt-1 ">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <small className="text-default-500">Happy happy Happy</small>
-        <h4 className="font-bold text-large">Brithday Juni❤️🔥</h4>
+        <small className=" font-bold">Happy </small>
+        <h4 className="font-bold text-large">Brithday Nana G ❤️😍</h4>
       </CardHeader>
       <CardBody className="overflow-visible py-2">
         <Image
