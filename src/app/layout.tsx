@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Happy Birthday",
-  description: "Wishing Junaid Brithday using Next JS 14",
+  description: "Wishing Nana G Brithday using Next JS 14",
 };
 
 export default function RootLayout({
